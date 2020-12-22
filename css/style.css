@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+
+}
+html{
+    font-size: 62.5%;
+}
+
+header{
+    height: 95vh;
+    background:url(../img/header-image1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+a,input{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+ul li{
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+}
+.lg-heading{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px red;
+}
+.md-heading{
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 5px red;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 5000;
+    text-transform: uppercase;
+}
+.header .navbar .container h1{
+    font-size: 3.5rem;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* practising  */
+
+
+/* .logo{
+    font-size: 40px;
+    padding-left: 1em;
+    margin-top: 1rem;
+    float: left;
+    color: white;
+}
+
+.nav-item{
+    font-size: 40px;
+    float: right;
+    display: inline;
+    color: white;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    margin-top: 1rem;
+}  */
+
+/* #####utility class##### */
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-grey{
+    color: #555;
+}
+.bg-dark{
+    background-color: #263238;
+}
+.bg-grey{
+    background-color: lightcoral;
+}
+.bg-coffee{
+    background-color: #fff;
+}
+/* 
+
+#####header styling############ */
+
+.navbar a{
+    /* border-style: hidden; */
+    padding: 1rem;
+}
+
+.header .logo,
+.header .navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar::after{
+    content: ' ';
+    clear: both;
+    display: block;   
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navbar a:link,
+.navbar a:visited
+{
+    color: #f4f4f4;
+}
+.navbar a{
+    padding: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+    background-color: tan;
+}
+
+
+/* #######header container styling###### */
+
+.header-contain{
+    /* max-width: 1200px;
+    margin:0 auto;
+    width: 90%;
+    text-align: center;
+    margin-top: 18rem; */
+    border: 1px solid white;
+    border-style: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    text-align: center;
+}
+
+.header-contain h1{
+    text-transform: uppercase;
+}
+
+.header-contain p{
+    text-transform: uppercase;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color:#fff;
+    border-radius: 10em;
+}
+/* .header-contain a:hover{
+    border-bottom: 1px solid cyan;
+} */
+
+
+/* #####showcase styling##### */
+
+.showcase{
+    background:#ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background-color:#fff;
+    box-shadow: 1.5px 2.5px 10px black;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box,.row2 .text-box{
+    width: 50%;
+    float: left;
+}
+.row1 .text-box,.row2 .img-box{
+    width: 50%;
+    float: left;
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+}
+
+/* #####practising##### */
+
+/* .showcase .text-box .showcase-heading{
+    height: 30%;
+    letter-spacing: 0.15rem;
+    font-size: 4.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0;
+    color: #ddd;
+    background-color: cyan;
+    padding: 0.15rem;
+}
+.showcase .text-box .showcase-paragraph{
+    height: 70%;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 0;
+    color: #f4f4f4;
+    background-color: gray;
+} */
+
+.row .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.btn-more{
+    color: black;
+    border-radius: 10em;
+    background-color: skyblue;
+}
+.row a:hover{
+    background-color: tan;
+}
+.header-contain a:hover{
+    background-color: tan;
+}
+.row::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+/* #####practising##### */
+
+/* .box-wrapper{
+    height: 250px;
+    background-color:cornsilk;
+    margin-bottom: 10rem;
+    padding: 3rem;
+}
+.box-wrapper .box-1{
+    width: 33%;
+    float: left;
+    margin-bottom: 10rem;
+    background-color:wheat;
+    padding: 1.5rem;
+    text-align: center;
+}
+.box-wrapper .box-2{
+    width: 33%;
+    float: left;
+    background-color: burlywood;
+    padding: 1.5rem;
+    text-align: center;
+}
+.box-wrapper .box-3{
+    width: 33%;
+    float: left;
+    background-color: wheat;
+    padding: 1.5rem;
+    text-align: center;
+} */
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    
+}
+.box{
+    width: 33.33333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-wrapper:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.box-1,.box-3{
+    background-color: #263238;
+    color: #fff;
+    height: 100;
+}
+.box-2{
+    background-image: linear-gradient( 112.4deg,  rgba(169,28,115,1) 21.6%, rgba(219,112,54,1) 92.2% );
+    color: #fff;
+}
+.footer{
+   
+    background-color:#ddd;
+    padding: 3rem;
+    text-align: center;
+   
+}
+.social-media-links i{
+    margin: 3.5rem;
+   
+}
+/* ####about page styling##### */
+.about{
+    padding: 4rem 0;
+}
+
+/* .container .about-heading{
+    border-bottom: 3px solid rgba(169,28,115,1);
+    width: 50%;
+} */
+
+.about-heading::after{
+    content:' ';
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+/* #####practising##### */
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+    
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+
+.about-wrapper::after{
+    content:' ';
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: red;
+    font-weight: bold;
+    padding-right: 1rem;
+   
+}
+
+
+/* .container .number_heading{
+    margin-top: 10rem;
+}
+.container .number-heading{
+    display: inline;
+    padding: 10rem;
+    margin-top: 5rem;
+} */
+
+/* .container .number-heading{
+    display: inline;
+} */
+
+/* ######about-wrapper styling###### */
+.counts{
+    border: 2px solid green;
+    text-align: center;
+    margin-top: 2rem;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.count-item{
+    float: left;
+    width: 25%;
+}
+.banner{
+    margin-top: 4rem;
+    background-color: red;
+    padding: 3rem;
+    color: white;
+}
+
+/* .banner-contact{
+    background-color: green;
+    padding: 1.5rem;
+} */
+/* #####practising##### */
+/* ####banner styling#### */
+
+.cta-banner{
+    background-color: lightcoral;
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 1.5px 2.5px 10px black;
+    margin-top: 4rem;
+}
+.cta-banner::after{
+    display: block;
+    content:'';
+    clear: both;
+}
+.cta-banner-left{
+    float: left;
+    width: 60%;
+}
+.cta-banner-right{
+    float: left;
+    width: 40%;
+    text-align: right;
+}
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.6rem;
+}
+.btn-cta{
+    text-align: left;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.3rem 2.5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 5px solid white;
+    color: #f4f4f4;
+    letter-spacing: 0.5rem;
+}
+
+.contact-form{
+    padding: 4rem 0;
+    background: #f7f7f7;
+}
+.form-wrapper{
+}
+.form-wrapper .company-address{
+
+    float: left;
+    width: 49%;
+    padding: 1rem;
+    
+}
+.form-wrapper .form{
+    float: right;
+    width: 49%;
+    font-size: 1.6rem;
+    background: #fff;
+    height: 760px;
+    padding: 1rem;
+}
+.form-wrapper::after{
+    content:' ';
+    display: block;
+    clear: both;
+}
+
+/* ####Practisiing##### */
+
+/* .h3-location{
+    padding: 1rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+.h3-location{
+    float: left;
+    width: 20%;
+}
+.location{
+    float: right;
+    width: 80%;
+} */
+
+.contact-form .company-address{
+    background: #fff;
+    padding: 1rem;
+}
+.contact-form .form{
+    background: #fff;
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+}
+.form-wrapper .address-group{
+    padding: 2rem;
+}
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 20rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* .contact-us::after{
+    content:' ';
+    display: block;
+    border: 3px solid #e63946;
+    width: 50%;
+} */
+/* ####practising##### */
+
+/* .contact-form .form .info-form{
+    padding: 1rem;
+}
+.contact-form .form .info-form .label-form{
+    font-size: 1rem;
+}
+.contact-form .form p{
+    padding: 1rem;
+}
+.contact-form .form .message-box{
+    height: 100%;
+    width: 100%;
+} */
+
+.form-wrapper label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form h1::after{
+    content:'';
+    display: block;
+    border: 3px solid #ee4758;
+    width: 100%; 
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after{
+    content: '*';
+    color: #e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin:0 auto;
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: none;
+}
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items,.navbar .logo{
+        float:none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* .header-contain .main-heading{
+        display: none;
+    } */
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box,
+    .row .text-box{
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    .features .box{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+    }
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media (min-width:501px) and (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items,.navbar .logo{
+        float:none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* .header-contain .main-heading{
+        display: none;
+    } */
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box,
+    .row .text-box{
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    .features .box{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+    }
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media (orientation:landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
+.top-nav1{
+    display: inline-block;
+    padding: 2rem;
+    margin-left: 8rem;
+
+}
+.top-nav2{
+    display: inline-block;
+    padding: 2rem;
+    margin-left: 8rem;
+
+}
+.top-nav3{
+    display: inline-block;
+    margin-left: 16rem;
+    width: 30%;
+}
+.contact-form .form-wrapper .registration-form .form{
+    width: 100%;
+    background: #fff;
+    padding: 1rem;
+}
